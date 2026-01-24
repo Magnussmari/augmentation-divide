@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Smárason"
+    given-names: "Magnús Smári"
+    email: "magnus@gsmarason.is"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "The Augmentation Divide: Cognitive Debt Stratification in the Generative AI Era"
+version: 1.0.0
+date-released: 2026-01-23
+url: "https://github.com/yourusername/augmentation-divide"
+repository-code: "https://github.com/yourusername/augmentation-divide"
+license: MIT
+type: software
+keywords:
+  - critical thinking
+  - generative AI
+  - cognitive debt
+  - augmentation divide
+  - epistemic agency
+  - life-value onto-axiology
+  - ChatGPT
+  - Community Notes
+abstract: >-
+  Replication materials for "The Augmentation Divide: Cognitive Debt
+  Stratification in the Generative AI Era." Contains all data, code, and
+  materials necessary to replicate the four-layer analysis demonstrating
+  stratified epistemic response patterns and the emergence of the
+  Augmentation Divide by economic development level.
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Smárason"
+      given-names: "Magnús Smári"
+  title: "The Augmentation Divide: Cognitive Debt Stratification in the Generative AI Era"
+  year: 2026
+  journal: "SSRN Preprint"
+  doi: "10.2139/ssrn.XXXXXXX"

@@ -1,0 +1,23 @@
+Metric,Value,Source
+Total Contributors (unique authors),227702.0,Zenodo notes_with_lang.csv
+Total Notes,1614743.0,Zenodo notes_with_lang.csv
+Distinct Posts Annotated (tweetId count),1016673.0,Zenodo notes_with_lang.csv
+Pre-ChatGPT months,22.0,Computed
+Post-ChatGPT months,27.0,Computed
+Pre avg monthly notes,1360.8,Computed
+Post avg monthly notes,58696.5,Computed
+Raw monthly notes growth (%),4213.0,Computed
+Pre avg active authors,546.4,Computed
+Post avg active authors,22762.4,Computed
+Active authors growth (%),4066.0,Computed
+Pre avg notes per active author,2.51,Computed
+Post avg notes per active author,2.928,Computed
+Notes per author growth (%),17.0,Computed
+Pre median time-to-first-note (hours),8.74,Computed
+Post median time-to-first-note (hours),7.8,Computed
+Time-to-first-note change (%),-11.0,Computed
+Helpful rate (%),8.3,Mohammadi et al. (2025)
+Needs More Ratings rate (%),87.7,Mohammadi et al. (2025)
+Top contributor notes,33186.0,Mohammadi et al. (2025)
+Avg hours to Helpful visible,26.0,Mohammadi et al. (2025)
+Dropped rows (timestamp parse failures),0.0,Computed
