@@ -1,0 +1,383 @@
+\documentclass[11pt,a4paper]{article}
+
+% Standard LaTeX packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{natbib}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{float}
+
+\geometry{margin=1in}
+\doublespacing
+
+% Hyperref setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\title{The Augmentation Divide:\\
+Cognitive Debt Stratification in the Generative AI Era}
+
+\author{Magnús Smári Smárason\\
+Independent Researcher, Iceland\\
+\texttt{magnus@smarason.is}\\
+\url{https://www.smarason.is}}
+\date{January 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\textit{SSRN Preprint. Replication materials: github.com/magnussmari/augmentation-divide}
+\end{center}
+
+\begin{abstract}
+In Sub-Saharan Africa, people are enrolling in generative AI courses at 22 times the rate they are enrolling in critical thinking courses. This is not neutral technology adoption. This pattern is consistent with cognitive dependency formation.
+
+We document a stark stratification in global responses to generative AI. While public interest in critical thinking has surged since 2022, this interest is translating unevenly into skill---and the gap follows economic lines. High-HDI countries produce 11.8$\times$ more research on critical thinking and AI than low-HDI countries (5.7$\times$ on a per-country basis). The top five nations---the United States, China, the United Kingdom, Australia, and Spain---generate 45\% of all scholarly output on the topic.
+
+We introduce two concepts to explain these patterns. \textbf{Cognitive Debt} describes how algorithmic dependency compounds over time: each act of uncritical AI use erodes the capacity for the next act of critical evaluation. The \textbf{Augmentation Divide} captures the resulting stratification: regions with institutional capacity build defensive cognitive infrastructure while others accumulate debt.
+
+The policy stakes are urgent. Sub-Saharan Africa shows critical thinking enrollment growth of just 6\% against GenAI growth of 134\%---a 22:1 imbalance. In contrast, Latin America demonstrates that balanced development is possible, with critical thinking enrollment growing 194\% alongside 425\% GenAI growth (a 2.2:1 ratio). Without targeted investment in critical thinking infrastructure, AI will widen global inequality rather than narrow it. The window for intervention is closing.
+
+\medskip
+\noindent\textbf{Keywords:} critical thinking, generative AI, cognitive debt, augmentation divide, digital inequality, Global South
+\end{abstract}
+
+\section{Introduction}
+
+Who is building the cognitive infrastructure to survive the AI era?
+
+The answer is stark: wealthy nations are. Developing regions are not.
+
+Since ChatGPT's release in November 2022, global interest in critical thinking has surged. Google searches for the term have doubled in some languages. Academic publications on critical thinking and AI grew 141\% in a single year. But this response is not reaching everyone equally.
+
+Our data reveal a 22:1 enrollment imbalance in Sub-Saharan Africa. For every person enrolling in critical thinking courses, twenty-two are enrolling in GenAI courses. This is not a gap---it is a chasm. Meanwhile, Latin America demonstrates that balanced development is possible, with the highest critical thinking enrollment growth of any region (+194\%).
+
+\subsection{The Core Problem}
+
+The Global South is adopting AI tools rapidly. But investment in evaluation skills appears to lag behind. We propose that this imbalance may create \textbf{Cognitive Debt}: algorithmic dependency that compounds over time, potentially eroding the capacity for independent judgment.
+
+This pattern has precedent. Literacy did not spread equally with the printing press---it followed economic power for centuries. Digital literacy did not spread equally with internet access. There is no reason to expect AI literacy to spread equally without deliberate intervention.
+
+\subsection{The Asymmetric Adoption Risk}
+
+If the Global South imports AI tools without developing the frameworks to evaluate them, it risks becoming epistemically dependent---relying on systems built elsewhere to interpret reality, without the capacity to assess whether those interpretations serve local interests.
+
+The 11.8$\times$ research gap we document suggests that the discourse on critical thinking in the AI era is concentrated in the Global North. The 22:1 enrollment gap in Sub-Saharan Africa suggests those frameworks are not being learned where they may be most needed. This asymmetry warrants attention.
+
+\subsection{What This Paper Shows}
+
+We document stratification, not causation. We cannot prove ChatGPT caused the patterns we observe. What we can show is that critical thinking investment---whether measured by research output or course enrollment---is concentrated in wealthier nations. The Augmentation Divide describes this pattern.
+
+\section{Theoretical Framework: Cognitive Debt}
+
+Cognitive Debt works like financial debt. Each time you let AI think for you without checking its work, you lose a small amount of your own thinking capacity. The debt compounds. The longer it accumulates, the harder recovery becomes \citep{parasuraman2010,rintakahila2021}.
+
+We ground this concept in McMurtry's \citeyearpar{mcmurtry2011} Life-Value Onto-Axiology, which tracks three dimensions of human capacity:
+
+\begin{itemize}
+    \item \textbf{Thought:} Can you reason independently? Analyze claims? Solve problems without AI?
+    \item \textbf{Feeling:} Do you trust your own judgment? Feel confident evaluating information?
+    \item \textbf{Action:} Can you intervene when something is wrong? Do you have options?
+\end{itemize}
+
+Each dimension can erode through disuse. And the erosion compounds---less capacity leads to more AI dependence, which leads to less capacity.
+
+\subsection{Why AI is Different from Calculators}
+
+A fair objection: we use calculators without losing math skills. Why is AI different?
+
+The answer lies in what psychologists call ``desirable difficulty'' \citep{bjork2011}. Struggle builds capacity. Tools that eliminate productive struggle eliminate development. Calculators handle arithmetic so we can focus on higher math. AI increasingly handles the higher thinking itself \citep{parasuraman2000}.
+
+\subsection{The Compounding Mechanism}
+
+Recent research supports the proposed mechanism. \citet{lee2025} found that people who trust AI more report engaging in less critical thinking when using it. This suggests a potential feedback loop: positive experiences with AI may increase trust, which may decrease vigilance, which may increase dependency.
+
+For developing regions, there is an additional factor: distance from where AI governance decisions are made. The systems are designed elsewhere. The capacity to evaluate them must be built locally---and our data suggest this capacity is developing unevenly.
+
+\section{Method}
+
+We employ two primary data sources to document stratification. Supplementary indicators (Google Trends, Community Notes) are included in the Appendix but are not central to our claims due to confounding.
+
+\subsection{Institutional Discourse (OpenAlex)}
+
+Publication counts were compiled from OpenAlex bibliometric queries using the following parameters:
+
+\begin{itemize}
+    \item \textbf{Query:} \texttt{title\_and\_abstract.search:critical thinking AND (artificial intelligence OR generative AI OR ChatGPT)}
+    \item \textbf{Fields searched:} Title and abstract (full text not available via API)
+    \item \textbf{Date range:} 2016--2025
+    \item \textbf{Language:} All languages indexed by OpenAlex (predominantly English)
+    \item \textbf{Deduplication:} Handled by OpenAlex at the work level
+\end{itemize}
+
+We tracked year-over-year growth and computed field-normalized ratios (CT+AI papers per 10,000 AI papers) to control for overall publication growth. Country-level attributions were derived from author affiliations and merged with UNDP Human Development Index (HDI 2022) data to examine stratification \citep{undp2024}. Publications with authors from multiple countries were counted once per country (fractional counting was not used).
+
+\subsection{Skill Acquisition (Coursera)}
+
+We used Coursera's Global Skills Report \citep{coursera2025} to compare regional enrollment growth in critical thinking courses versus generative AI courses. The CT:GenAI ratio measures how fast regions are building evaluation skills relative to usage skills.
+
+\subsection{What We Do Not Measure}
+
+We do not directly measure Cognitive Debt. We measure proxies: research output (institutional investment) and course enrollment (skill investment). These proxies have limitations. Enrollment is not skill, but it is a leading indicator of future capacity. Publication counts favor English-language journals. We are transparent about these constraints.
+
+\section{Results}
+
+\subsection{The Research Gap: 11.8$\times$}
+
+\begin{table}[H]
+\centering
+\caption{HDI Stratification: CT+AI Research Output (OpenAlex + UNDP HDI 2022)}
+\label{tab:hdi}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+HDI Category & Countries & Total Attributions & Avg per Country & Ratio to Very High \\
+\midrule
+Very High & 69 & 1,409 & 20.4 & 1.00$\times$ \\
+High & 49 & 831 & 17.0 & 0.59$\times$ \\
+Medium & 42 & 214 & 5.1 & 0.15$\times$ \\
+Low & 33 & 119 & 3.6 & 0.08$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Very-high HDI countries produce 11.8 times more total research on critical thinking and AI than low-HDI countries (1,409 vs.\ 119 attributions). On a per-country basis, the gap is 5.7$\times$ (20.4 vs.\ 3.6 attributions per country). We report total attributions as the primary metric because it captures aggregate discourse influence, but the per-country figures are provided for transparency.
+
+This is concentration, not smooth gradient. The top 5 countries---the United States (463), China (282), United Kingdom (152), Australia (103), and Spain (92)---produce 45\% of all output. The top 10 produce 58\%.
+
+The field is not just growing---it is growing in specific places. The discourse on how to think critically about AI is being shaped by a small number of nations with strong research infrastructure.
+
+\subsection{The Skills Gap: Regional Stratification}
+
+\begin{table}[H]
+\centering
+\caption{Regional MOOC Enrollment: Critical Thinking vs.\ GenAI Skills (Coursera, 2025)}
+\label{tab:mooc}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Region & CT Growth & GenAI Growth & CT:GenAI Ratio \\
+\midrule
+Latin America & +194\% & +425\% & 0.46 \\
+Middle East \& North Africa & +19\% & +128\% & 0.15 \\
+Europe & +14\% & +116\% & 0.12 \\
+North America & +15\% & +135\% & 0.11 \\
+Asia Pacific & +12\% & +132\% & 0.09 \\
+Sub-Saharan Africa & +6\% & +134\% & 0.04 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Sub-Saharan Africa's CT:GenAI ratio of 0.04 is the paper's central finding. For every person enrolling in critical thinking courses, 22 are enrolling in GenAI courses. In contrast, Latin America shows a ratio of 0.46---the most balanced development globally, with critical thinking enrollment growing at nearly half the rate of GenAI enrollment.
+
+This stratification warrants attention. In Sub-Saharan Africa, skills for \emph{using} AI appear to be developing much faster than skills for \emph{evaluating} it. Latin America demonstrates that this pattern is not inevitable---regions \emph{can} invest in evaluation skills alongside adoption. Understanding what drives Latin America's balanced development could inform policy elsewhere.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{augmentation_divide_regional.png}
+\caption{The Augmentation Divide: Regional enrollment growth imbalance. Sub-Saharan Africa exhibits the starkest gap (CT:GenAI = 0.04, approximately 22:1 imbalance), while Latin America shows the most balanced development (CT:GenAI = 0.46, approximately 2.2:1). Data: Coursera Global Skills Report 2025, pp.\ 21, 33, 41, 49, 57, 63. Year-over-year growth rates for March 2024--February 2025.}
+\label{fig:augmentation}
+\end{figure}
+
+\subsection{The Institutional Response}
+
+\begin{table}[H]
+\centering
+\caption{OpenAlex Bibliometric Analysis: Publication Growth}
+\label{tab:biblio}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Year & CT+AI Pubs & YoY Growth & CT+AI per 10k AI \\
+\midrule
+2020 & 216 & +38\% & 2.68 \\
+2021 & 214 & $-$1\% & 2.51 \\
+2022 & 249 & +16\% & 2.96 \\
+2023 & 600 & +141\% & 6.23 \\
+2024 & 1,227 & +105\% & 9.51 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Academic institutions are responding. Critical thinking + AI publications grew 141\% in 2022--2023. The field-normalized ratio tripled from 2.96 to 9.51 CT+AI papers per 10,000 AI papers. But this response is concentrated in wealthy nations (Table~\ref{tab:hdi}).
+
+\section{Discussion: Asymmetric Development}
+
+\subsection{The Stratification Pattern}
+
+Our data reveal a two-tier pattern:
+
+\textbf{Tier 1 (High-HDI regions):} Produces the majority of research on critical thinking and AI. Shows more balanced enrollment between usage and evaluation courses. Has institutional capacity to participate in AI governance.
+
+\textbf{Tier 2 (Low-HDI regions):} Adopts AI tools developed elsewhere. Shows enrollment heavily skewed toward usage courses. Has limited institutional infrastructure for AI evaluation or governance.
+
+This pattern may not self-correct through market forces alone. Without deliberate intervention, it risks becoming structural.
+
+\subsection{Why This Matters}
+
+\textbf{Epistemic Sovereignty:} We define epistemic sovereignty as a population's capacity to independently evaluate information systems that shape their understanding of reality. This includes the ability to (1) assess AI outputs for accuracy and bias, (2) develop locally appropriate evaluation frameworks, and (3) participate in governance decisions about AI deployment. If the frameworks for evaluating AI are developed predominantly in high-HDI countries, they may reflect assumptions and priorities that do not transfer well to other contexts. The 11.8$\times$ research gap suggests this capacity is currently concentrated.
+
+\textbf{Democratic Resilience:} If the capacity to evaluate AI-generated political content is unevenly distributed, democratic deliberation may become stratified. Populations with limited evaluation skills may be more susceptible to AI-enabled manipulation, though this remains an empirical question requiring further research.
+
+\textbf{Economic Positioning:} Critical evaluation may become an increasingly valuable skill as AI automates routine cognitive tasks. Populations that develop this capacity early may be better positioned in the evolving labor market.
+
+\subsection{The Potential Feedback Loop}
+
+If the Cognitive Debt hypothesis is correct, dependency compounds. Each act of uncritical AI use may make the next more likely. Each year of underinvestment in critical thinking infrastructure may widen the gap.
+
+The 11.8$\times$ research gap suggests high-HDI countries are building the theoretical frameworks. The 22:1 enrollment gap in Sub-Saharan Africa suggests those frameworks are not being transmitted where they may be most needed. If debt accumulates as theorized, the capacity to recognize the problem may itself erode.
+
+However, Latin America's 2.2:1 ratio demonstrates that this pattern is not inevitable. With appropriate institutional investment, regions can build critical thinking capacity alongside AI adoption. This counter-example is crucial: it shows that the stratification we observe reflects policy choices, not immutable structural constraints.
+
+\subsection{Theoretical Implications}
+
+The stratification documented here invites theoretical interpretation. Viewed through McMurtry's \citeyearpar{mcmurtry2011} Life-Value Onto-Axiology, the pattern may reflect what he calls the ``Money-Sequence''---the tendency of market systems to optimize for exchange value rather than life value. In this framework, a population with high technical proficiency (generating data, paying subscriptions) but limited critical evaluation capacity (unable to contest algorithmic outputs) represents an optimal market configuration, even if suboptimal for human flourishing.
+
+We do not claim this pattern is intentionally designed. Market incentives may produce it emergently: AI usage courses are in high demand; critical thinking courses less so. The result, however, warrants attention regardless of intent.
+
+We introduce the concept of \textbf{Responsibility Fog} to describe the diffusion of accountability that occurs when governance frameworks are developed far from the populations they affect. This fog has three components:
+
+\begin{enumerate}
+    \item \textbf{Geographic distance:} AI systems are designed in a small number of countries; their effects are global.
+    \item \textbf{Epistemic distance:} The frameworks for evaluating AI are concentrated in high-HDI countries (the 11.8$\times$ gap).
+    \item \textbf{Capacity distance:} Populations most affected may have the least capacity to participate in governance (the 22:1 enrollment gap).
+\end{enumerate}
+
+When these distances compound, accountability becomes difficult to locate. Who is responsible when an AI system causes harm in a region that had no voice in its design, no researchers studying its effects, and limited population capacity to evaluate its outputs?
+
+Latin America's 2.2:1 ratio suggests this fog can be cleared. With deliberate investment in critical thinking infrastructure---reflected in 194\% enrollment growth---regions can develop evaluation capacity. The question is whether this pattern can be replicated, and how quickly.
+
+\section{Limitations}
+
+We are transparent about what this paper can and cannot show:
+
+\begin{enumerate}
+    \item \textbf{We document correlation, not causation.} We show stratification patterns that emerged after ChatGPT's release. We cannot prove ChatGPT caused them. Other factors (economic conditions, educational policy, infrastructure) may explain the patterns.
+
+    \item \textbf{Enrollment is not skill.} MOOC enrollment shows investment direction. It does not prove skill acquisition or retention. Completion rates, assessment scores, and real-world application would be more informative but were not available.
+
+    \item \textbf{Coursera users are not representative.} Coursera enrollees tend to be more educated and urban than general populations. Our MOOC data may not reflect broader population trends, particularly in regions with low internet penetration.
+
+    \item \textbf{Publication counts favor English.} OpenAlex indexes predominantly English-language publications. Our bibliometric data likely underestimate research published in Chinese, Spanish, Arabic, and other languages. The 11.8$\times$ gap may partly reflect language and publication-venue biases rather than capacity differences.
+
+    \item \textbf{Cognitive Debt is a theoretical framework, not a measured variable.} We propose it as a lens for understanding patterns. Future research should operationalize and test it directly---for example, by measuring critical thinking skills before and after extended AI use.
+
+    \item \textbf{Supplementary indicators are confounded.} Google Trends may reflect media cycles. Community Notes growth overlaps with platform expansion. We demote these to the Appendix accordingly.
+\end{enumerate}
+
+\section{Policy Implications}
+
+\subsection{The Stakes}
+
+The Augmentation Divide is the digital divide's next chapter. But the stakes are higher. The digital divide concerned access to information. The Augmentation Divide concerns the capacity to evaluate it.
+
+\subsection{Three Priorities}
+
+\begin{enumerate}
+    \item \textbf{Pair AI deployment with critical thinking investment.} AI rollouts in developing contexts should include parallel investment in evaluation skills. The 22:1 imbalance in Sub-Saharan Africa warrants attention. Latin America's 2.2:1 ratio shows balanced development is achievable.
+    
+    \textit{Tradeoff acknowledged:} Conditioning AI access on capacity building could delay beneficial applications. The goal is parallel development, not gatekeeping. Populations should not be denied AI tools while waiting for perfect evaluation infrastructure---but neither should evaluation be neglected.
+
+    \item \textbf{Fund research capacity in underrepresented regions.} The 11.8$\times$ gap means the discourse is concentrated. Funding researchers in low-HDI countries to develop locally appropriate frameworks would both improve those frameworks and build epistemic sovereignty. This is an investment in the quality of global AI governance, not merely aid.
+
+    \item \textbf{Design for mobile-first populations.} Most people in developing regions access the internet through phones. Critical thinking tools that require desktop computers or high bandwidth will not reach the populations that most need them. Mobile-first design is essential for equitable access.
+\end{enumerate}
+
+\subsection{The Window}
+
+If Cognitive Debt compounds as theorized, delay has costs. The populations potentially most vulnerable to AI-enabled misinformation may be the same populations with least access to evaluation skills.
+
+This trajectory is not inevitable. Latin America's example shows that balanced development is achievable. But the window for building pre-emptive infrastructure is finite. Early investment may be more effective than later remediation.
+
+\section*{Acknowledgments}
+
+The author thanks the open-source communities maintaining OpenAlex and the UNDP Human Development Report for enabling reproducible research.
+
+\paragraph{AI Assistance Disclosure}
+During the preparation of this work, the author used Claude (Anthropic, Opus 4.5) for: (1) Python code development for data analysis scripts, (2) LaTeX manuscript formatting, and (3) an adversarial review system to critique research methodology. After using these tools, the author verified all outputs and edited as needed. All analyses, interpretations, and conclusions are the author's own.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\appendix
+
+\section{Supplementary Indicators (Confounded)}
+
+The following metrics indicate broad public engagement with critical thinking but are included here as context rather than primary evidence. Both are confounded by factors unrelated to AI adoption.
+
+\subsection{Google Trends (Layer 1)}
+
+Search interest in ``critical thinking'' increased across four language communities after late 2022 (Table~\ref{tab:trends}). However, robustness checks revealed that November 2022 was not uniquely powerful as a breakpoint. In zero of four languages did the ChatGPT date produce the strongest effect. Three of four languages showed significant upward trends \emph{before} ChatGPT launched.
+
+\begin{table}[H]
+\centering
+\caption{Google Trends: Pre/Post November 2022 (Jan 2016--Dec 2025)}
+\label{tab:trends}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Language & Pre Median & Post Median & Change & $p$ (Mann-Whitney) \\
+\midrule
+Spanish & 19.0 & 56.0 & +195\% & $7.1 \times 10^{-13}$ \\
+German & 20.0 & 36.5 & +83\% & $2.8 \times 10^{-12}$ \\
+French & 38.5 & 52.5 & +36\% & $1.7 \times 10^{-8}$ \\
+English & 50.0 & 67.0 & +34\% & $1.2 \times 10^{-9}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Interpretation:} These data show increased public interest but do not establish causation. The trend may reflect broader AI awareness, institutional change, or multiple converging factors. We include them to contextualize the environment, not as evidence of skill acquisition.
+
+\subsection{Community Notes (Layer 3)}
+
+Community Notes participation scaled 43-fold after November 2022 (Table~\ref{tab:community}). However, this growth coincided with the platform's global expansion in late 2022. We cannot separate the ChatGPT effect from platform scaling.
+
+\begin{table}[H]
+\centering
+\caption{Community Notes Participation (Zenodo 10.5281/zenodo.16761304)}
+\label{tab:community}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Period & Notes/month & Active authors/month & Notes/author \\
+\midrule
+Pre (Jan 2021--Oct 2022) & 1,361 & 546 & 2.51 \\
+Post (Nov 2022--Jan 2025) & 58,696 & 22,762 & 2.93 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Quality context from \citet{mohammadi2025}: Only 8.3\% of notes achieve ``Helpful'' status. 87.7\% remain ``Needs More Ratings.'' Relying on unpaid volunteers to filter misinformation is fragile.
+
+\textbf{Interpretation:} These data show platform scaling, not necessarily cognitive response to AI. The confound is too severe to support causal claims. We include them for completeness.
+
+\section{Data Provenance}
+
+\begin{table}[H]
+\centering
+\caption{Data File Provenance}
+\label{tab:provenance}
+\footnotesize
+\begin{tabular}{@{}llll@{}}
+\toprule
+Layer & File & Source & Query Date \\
+\midrule
+2 & \texttt{real\_bibliometrics.csv} & OpenAlex API & 2026-01-23 \\
+4 & \texttt{real\_hdi\_stratification.csv} & OpenAlex + UNDP HDI 2022 & 2026-01-23 \\
+4 & \texttt{real\_mooc\_regional.csv} & Coursera Global Skills Report 2025 & 2026-01-24 \\
+4 & \texttt{Global\_Skills\_Report\_2025.pdf} & Coursera (archived) & 2026-01-24 \\
+Supp & \texttt{trends\_*.csv} & Google Trends API & 2026-01-23 \\
+Supp & \texttt{real\_community\_notes*.csv} & Zenodo 10.5281/zenodo.16761304 & 2026-01-23 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}
