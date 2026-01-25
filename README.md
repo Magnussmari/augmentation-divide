@@ -29,6 +29,16 @@ augmentation-divide/
 ├── requirements.txt            # Python dependencies
 ├── CITATION.cff               # Citation metadata
 │
+├── paper/                     # LaTeX source and compiled PDF
+│   ├── main.tex               # Paper source
+│   ├── main.pdf               # Compiled paper (15 pages)
+│   ├── references.bib         # Bibliography
+│   └── augmentation_divide_regional.png
+│
+├── archive/                   # Versioned archives
+│   ├── pre-review-2026-01-25/ # Pre-revision backup
+│   └── submission_2026-01-25.tar.gz
+│
 ├── data/
 │   ├── raw/                   # Raw API data files
 │   │   ├── HDR23-24_Composite_indices_complete_time_series.csv

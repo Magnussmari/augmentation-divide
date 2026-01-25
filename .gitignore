@@ -35,8 +35,10 @@ Thumbs.db
 
 # Large data files (if exceeding GitHub limits)
 *.zip
-*.tar.gz
 data/raw/community_notes_zenodo/notes_with_lang.csv
+
+# Allow submission archives
+!archive/submission_*.tar.gz
 
 # Build artifacts
 dist/
