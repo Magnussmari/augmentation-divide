@@ -52,6 +52,7 @@ augmentation-divide/
 │   └── [additional figures]
 │
 └── docs/
+    ├── AI_RESEARCH_METHODOLOGY.md  # Meta-methodology for AI-assisted research
     ├── methodology.md
     ├── data_sources.md
     └── cognitive_debt_framework.md
