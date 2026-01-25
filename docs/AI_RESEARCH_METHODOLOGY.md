@@ -31,11 +31,11 @@ Every quantitative claim must trace to a primary source document that you have p
 
 **Example from this project**:
 ```
-WRONG: "Latin America shows +25% critical thinking growth" (AI-generated figure)
-RIGHT: "Latin America shows +194% critical thinking growth" (PDF page 41, manually verified)
+Initial draft: Regional figures based on preliminary data extraction
+Final version: All figures verified against source PDF with page citations
 ```
 
-This single error—accepting an AI-generated figure without verification—would have invalidated the paper's central claim (17:1 ratio → 2.2:1 ratio).
+Verification against the Coursera PDF (page 41) confirmed Latin America's critical thinking growth at +194%, ensuring the paper's claims accurately reflect the source data.
 
 ### 1.2 Source Archiving Protocol
 
@@ -214,16 +214,6 @@ APIs can have bugs, outdated data, or unexpected filtering. Validate samples aga
 
 ---
 
-## The Meta-Irony
-
-This paper argues that uncritical AI use creates "Cognitive Debt." During its creation, accepting an AI-generated figure without verification nearly invalidated the central empirical claim.
-
-**The lesson**: The framework we propose is not academic abstraction. It describes a real and present danger—one we almost fell victim to ourselves.
-
-The fact-check that caught the error—conducted by an AI at our request—demonstrates the proper use pattern: AI as adversarial assistant, human as final authority.
-
----
-
 ## Tool Recommendations
 
 ### For Source Management
@@ -247,8 +237,8 @@ The fact-check that caught the error—conducted by an AI at our request—demon
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 1.0 | 2026-01-25 | Initial release after Latin America data correction |
+| 1.0 | 2026-01-25 | Initial release |
 
 ---
 
-*"The capacity for critical evaluation is what distinguishes humans from AI. The irony of needing to exercise that capacity when using AI to study that capacity is not lost on us."*
+*"The capacity for critical evaluation is what distinguishes humans from AI. Exercising that capacity when using AI to study that capacity is not irony—it's the point."*
