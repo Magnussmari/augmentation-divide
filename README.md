@@ -16,7 +16,7 @@ We document a stark stratification in global responses to generative AI:
 
 - **The 22:1 Ratio**: Sub-Saharan Africa's CT:GenAI enrollment ratio of 0.04 means people are learning to *use* AI at 22 times the rate they are learning to *evaluate* it.
 - **The Counter-Example**: Latin America shows balanced development is possible (CT:GenAI = 0.46, or 2.2:1), with critical thinking enrollment growing +194% YoY.
-- **The 11.8× Research Gap**: Very-high HDI countries produce 11.8× more research on critical thinking and AI than low-HDI countries. The top 5 countries generate 45% of all output.
+- **The 14.8× Research Gap**: Very-high HDI countries produce 14.8× more research on critical thinking and AI than low-HDI countries (7.1× on a per-country basis). The top 5 countries—the United States, Indonesia, the United Kingdom, China, and India—generate 44% of all output.
 
 Regions without institutional investment in critical thinking are becoming consumer colonies for AI—importing tools without importing the frameworks to question them.
 
@@ -42,7 +42,7 @@ augmentation-divide/
 ├── data/
 │   ├── raw/                   # Raw API data files
 │   │   ├── HDR23-24_Composite_indices_complete_time_series.csv
-│   │   ├── openalex_ct_ai_authorships_countries_2026-01-23.json
+│   │   ├── openalex_ct_ai_CHATGPT_query_2026-01-29.json  # Corrected query
 │   │   ├── openalex_total_ai_by_year_2026-01-23.json
 │   │   └── README.md
 │   └── processed/             # Analysis outputs
@@ -76,17 +76,17 @@ augmentation-divide/
 |--------|---------|-------------|
 | **Skills Gap (Worst)** | Sub-Saharan Africa CT:GenAI = 0.04 (22:1) | Dependency formation in real time |
 | **Skills Gap (Best)** | Latin America CT:GenAI = 0.46 (2.2:1) | Balanced development is possible |
-| **Research Gap** | 11.8× (Very High vs Low HDI) | Discourse shaped by wealthy nations |
-| **Concentration** | Top 5 countries = 45% of output | Knowledge production is localized |
+| **Research Gap** | 14.8× (Very High vs Low HDI) | Discourse shaped by wealthy nations |
+| **Concentration** | Top 5 countries = 44% of output | Knowledge production is localized |
 
 ### HDI Stratification (OpenAlex + UNDP HDI 2022)
 
 | HDI Category | Countries | Total Attributions | Ratio to Very High |
 |--------------|-----------|------------|-------------------|
-| Very High | 69 | 1,409 | 1.00× |
-| High | 49 | 831 | 0.59× |
-| Medium | 42 | 214 | 0.15× |
-| Low | 33 | 119 | **0.08×** |
+| Very High | 69 | 2,781 | 1.00× |
+| High | 49 | 1,314 | 0.47× |
+| Medium | 42 | 355 | 0.13× |
+| Low | 33 | 188 | **0.07×** |
 
 ### Regional MOOC Enrollment (Coursera Global Skills Report 2025)
 

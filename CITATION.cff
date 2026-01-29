@@ -3,13 +3,13 @@ message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Smárason"
     given-names: "Magnús Smári"
-    email: "magnus@gsmarason.is"
+    email: "magnus@smarason.is"
     orcid: "https://orcid.org/0000-0000-0000-0000"
 title: "The Augmentation Divide: Cognitive Debt Stratification in the Generative AI Era"
 version: 1.0.0
 date-released: 2026-01-23
-url: "https://github.com/yourusername/augmentation-divide"
-repository-code: "https://github.com/yourusername/augmentation-divide"
+url: "https://github.com/magnussmari/augmentation-divide"
+repository-code: "https://github.com/magnussmari/augmentation-divide"
 license: MIT
 type: software
 keywords:

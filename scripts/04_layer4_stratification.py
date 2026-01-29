@@ -51,7 +51,7 @@ FIGURES.mkdir(parents=True, exist_ok=True)
 OPENALEX_WORKS_URL = "https://api.openalex.org/works"
 OPENALEX_FILTER = (
     "title_and_abstract.search:critical thinking AND "
-    "(artificial intelligence OR generative AI OR machine learning)"
+    "(artificial intelligence OR generative AI OR ChatGPT)"
 )
 OPENALEX_MAILTO = "maggismari@gmail.com"
 OPENALEX_CACHE_JSON = DATA_RAW / "openalex_ct_ai_authorships_countries_2026-01-23.json"
