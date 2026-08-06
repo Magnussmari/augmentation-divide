@@ -1,6 +1,6 @@
 # The Augmentation Divide
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.XXXXXXX-blue)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://img.shields.io/badge/DOI-10.2139%2Fssrn.6149706-blue)](https://doi.org/10.2139/ssrn.6149706)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -8,7 +8,7 @@
 
 Replication materials for:
 
-> Smárason, M. S. (2026). The Augmentation Divide: Cognitive Debt Stratification in the Generative AI Era. *SSRN Preprint*.
+> Smárason, M. S. (2026). The Augmentation Divide: Cognitive Debt Stratification in the Generative AI Era. *SSRN Preprint*. https://doi.org/10.2139/ssrn.6149706
 
 ## The Core Finding
 
@@ -159,7 +159,7 @@ python scripts/08_augmentation_divide_visual.py
   author={Smárason, Magnús Smári},
   journal={SSRN Preprint},
   year={2026},
-  doi={10.2139/ssrn.XXXXXXX}
+  doi={10.2139/ssrn.6149706}
 }
 ```
 
